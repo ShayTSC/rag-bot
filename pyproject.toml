@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "handbook-rag"
+version = "0.1.0"
+description = "RAG-based QA system for employee handbook"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.110.0"
+uvicorn = "^0.27.1"
+torch = "^2.1.0"
+transformers = "^4.35.0"
+sentence-transformers = "^2.2.2"
+llama-cpp-python = "^0.2.56"
+PyPDF2 = "^3.0.1"
+pydantic = "^2.4.2"
+python-dotenv = "^1.0.0"
+redis = "^5.0.1"
+qdrant-client = "^1.7.3"
+numpy = "^1.26.4"
+accelerate = "^1.2.1"
+python-multipart = "^0.0.9"
+sse-starlette = "^1.8.2"
+hf-transfer = "^0.1.8"
+huggingface-hub = "^0.26.5"
+pydantic-settings = "^2.7.0"
+openai = "^1.57.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+black = "^23.10.1"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api" 
